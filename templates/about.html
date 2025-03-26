@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Обо мне - AI Prompts{% endblock %}
+
+{% block content %}
+<section class="section about">
+    <div class="about-content">
+        <div class="about-header">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Фото профиля" class="profile-image">
+            <div class="about-text">
+                <h1 class="section-title">Привет, я Сева Дмитренко</h1>
+                <p class="subtitle">Эксперт по искусственному интеллекту и автоматизации</p>
+            </div>
+        </div>
+        
+        <div class="about-description">
+            <p>
+                Я специализируюсь на разработке и оптимизации промптов для различных AI-систем,
+                помогаю бизнесу внедрять искусственный интеллект в рабочие процессы и создаю
+                эффективные решения для автоматизации задач.
+            </p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-robot"></i>
+                <h3>AI & Промпты</h3>
+                <p>Разработка и оптимизация промптов для различных AI-систем</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Автоматизация</h3>
+                <p>Создание решений для автоматизации бизнес-процессов</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Оптимизация</h3>
+                <p>Улучшение эффективности работы с помощью AI</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contact-buttons">
+                <a href="https://t.me/dmitrenko_ai" class="btn">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+                <a href="mailto:your@email.com" class="btn">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

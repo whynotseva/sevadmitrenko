@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block title %}Главная - AI Prompts{% endblock %}
+
+{% block content %}
+<!-- Главный экран -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">
+            PRO-PROMPT LAB:<br>
+            <span class="accent">Лаборатория Промптов</span>
+        </h1>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">уникальных промптов</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">поддержка клиентов</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">довольных клиентов</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">возможностей с AI</span>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>Узнать больше</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- Правила -->
+<section id="about" class="about">
+    <div class="about-content">
+        <h2 class="section-title">ПРАВИЛА БИБЛИОТЕКИ PRO</h2>
+        <div class="rules-grid">
+            <div class="rule-card">
+                <span class="rule-number">01</span>
+                <h3>ЭКСКЛЮЗИВ ДЛЯ ТВОЕГО РОСТА</h3>
+                <p>Все промпты в этой библиотеке уникальны и разработаны с нуля. Они созданы, чтобы ты мог автоматизировать процессы, ускорить работу и улучшить свои результаты. Используй их только для себя — не копируй, не распространяй и не перепродавай.</p>
+            </div>
+            <div class="rule-card">
+                <span class="rule-number">02</span>
+                <h3>УВАЖАЙ ТРУД И ИДЕИ</h3>
+                <p>Каждый промпт — это часы тестирования и работы, чтобы ты получил качественный инструмент. Передавать их другим запрещено. Пусть они приносят пользу тебе, а не чужим людям.</p>
+            </div>
+            <div class="rule-card">
+                <span class="rule-number">03</span>
+                <h3>ДЕЛИСЬ ДОСТИЖЕНИЯМИ, А НЕ ИНСТРУМЕНТАМИ</h3>
+                <p>Рассказывай о своих успехах, показывай, как AI помогает тебе в работе, но сохраняй библиотеку в своём арсенале.</p>
+            </div>
+            <div class="rule-card">
+                <span class="rule-number">04</span>
+                <h3>ДОБРО ПОЖАЛОВАТЬ В КЛУБ</h3>
+                <p>Если ты согласен — добро пожаловать в закрытый клуб, где AI помогает зарабатывать и достигать целей.</p>
+            </div>
+        </div>
+        <div class="rules-welcome">
+            <p>Библиотека регулярно пополняется. Следи за обновлениями, чтобы всегда быть на шаг впереди.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Промпты -->
+<section id="prompts" class="prompts">
+    <div class="prompts-header">
+        <h2 class="section-title">Библиотека промптов</h2>
+        <div class="prompts-categories">
+            <button class="category-btn active">Все</button>
+            <button class="category-btn">Маркетинг</button>
+            <button class="category-btn">Контент</button>
+            <button class="category-btn">Копирайтинг</button>
+        </div>
+    </div>
+    <div class="prompts-grid">
+        <div class="prompt-card">
+            <span class="prompt-category">Маркетинг</span>
+            <div class="prompt-content">
+                <h3>Маркетинговая стратегия</h3>
+                <p>Создавайте комплексные маркетинговые стратегии для любого бизнеса с учетом целевой аудитории и конкурентной среды.</p>
+                <div class="prompt-meta">
+                    <span class="prompt-price">3900 ₽</span>
+                    <a href="#consultation" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="prompt-card">
+            <span class="prompt-category">Контент</span>
+            <div class="prompt-content">
+                <h3>Контент-план на месяц</h3>
+                <p>Генерируйте детальный план контента для всех социальных сетей с идеями, форматами и календарем публикаций.</p>
+                <div class="prompt-meta">
+                    <span class="prompt-price">2900 ₽</span>
+                    <a href="#consultation" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="prompt-card">
+            <span class="prompt-category">Копирайтинг</span>
+            <div class="prompt-content">
+                <h3>Продающие тексты</h3>
+                <p>Создавайте мощные продающие тексты для любых форматов: от лендингов до email-рассылок и рекламных кампаний.</p>
+                <div class="prompt-meta">
+                    <span class="prompt-price">4900 ₽</span>
+                    <a href="#consultation" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Консультация -->
+<section id="consultation" class="consultation">
+    <div class="consultation-content">
+        <h2 class="section-title">Бесплатная консультация</h2>
+        <p class="section-description">
+            Возникли вопросы или нужна помощь с выбором промптов?
+            Я всегда на связи и готов ответить на все ваши вопросы.
+        </p>
+        <a href="https://t.me/dmitrenko_ai" class="btn btn-primary" target="_blank">
+            <i class="far fa-comments"></i>
+            Написать в Telegram
+        </a>
+    </div>
+</section>
+{% endblock %} 

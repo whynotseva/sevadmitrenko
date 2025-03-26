@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Библиотека промптов - AI Prompts{% endblock %}
+
+{% block content %}
+<section class="section prompts">
+    <h1 class="section-title">Библиотека промптов</h1>
+    <p class="section-description">
+        Здесь вы найдете коллекцию полезных промптов для различных задач. 
+        Каждый промпт протестирован и готов к использованию.
+    </p>
+
+    <div class="prompts-grid">
+        <div class="prompt-card">
+            <div class="prompt-header">
+                <i class="fas fa-file-alt"></i>
+                <h3>Промпт для написания текстов</h3>
+            </div>
+            <p class="prompt-description">
+                Оптимизированный промпт для создания качественного контента с помощью AI.
+            </p>
+            <div class="prompt-meta">
+                <span class="prompt-category">Контент</span>
+                <span class="prompt-difficulty">Средний</span>
+            </div>
+            <a href="#" class="btn prompt-btn">Открыть промпт</a>
+        </div>
+
+        <div class="prompt-card">
+            <div class="prompt-header">
+                <i class="fas fa-code"></i>
+                <h3>Промпт для программирования</h3>
+            </div>
+            <p class="prompt-description">
+                Эффективный промпт для генерации кода и решения технических задач.
+            </p>
+            <div class="prompt-meta">
+                <span class="prompt-category">Программирование</span>
+                <span class="prompt-difficulty">Продвинутый</span>
+            </div>
+            <a href="#" class="btn prompt-btn">Открыть промпт</a>
+        </div>
+
+        <div class="prompt-card">
+            <div class="prompt-header">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Промпт для анализа данных</h3>
+            </div>
+            <p class="prompt-description">
+                Специализированный промпт для анализа и визуализации данных.
+            </p>
+            <div class="prompt-meta">
+                <span class="prompt-category">Аналитика</span>
+                <span class="prompt-difficulty">Средний</span>
+            </div>
+            <a href="#" class="btn prompt-btn">Открыть промпт</a>
+        </div>
+
+        <div class="prompt-card">
+            <div class="prompt-header">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Промпт для креативных задач</h3>
+            </div>
+            <p class="prompt-description">
+                Промпт для генерации креативных идей и творческих решений.
+            </p>
+            <div class="prompt-meta">
+                <span class="prompt-category">Креатив</span>
+                <span class="prompt-difficulty">Начальный</span>
+            </div>
+            <a href="#" class="btn prompt-btn">Открыть промпт</a>
+        </div>
+    </div>
+</section>
+{% endblock %} 
