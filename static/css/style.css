@@ -843,23 +843,12 @@ body {
 }
 
 .consultation .btn-primary::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    bottom: -50%;
-    left: -50%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
-    transform: rotateZ(60deg) translate(-5em, 7.5em);
-    animation: shine 5s infinite;
+    display: none;
 }
 
 @keyframes shine {
-    0% {
-        transform: rotateZ(60deg) translate(-5em, 7.5em);
-    }
-    100% {
-        transform: rotateZ(60deg) translate(12em, -7.5em);
+    0%, 100% {
+        transform: none;
     }
 }
 
@@ -1630,4 +1619,50 @@ body.light-theme .consultation-content {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Стили для кнопки бесплатного GPT */
+.free-gpt-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--accent-color);
+    color: var(--button-text);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    margin-right: 12px;
+}
+
+.free-gpt-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.free-gpt-btn i {
+    font-size: 16px;
+}
+
+/* Класс для отображения только на десктопе */
+.desktop-only {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+/* Убираем свечение с кнопки "Написать в Telegram" */
+.consultation .btn-primary::after {
+    display: none;
+}
+
+@keyframes shine {
+    0%, 100% {
+        transform: none;
+    }
 } 
